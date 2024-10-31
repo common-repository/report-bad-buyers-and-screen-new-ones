@@ -1,0 +1,270 @@
+/*
+ * Admin API Settings CSS
+ */
+.ebr-ad-main .form-table {
+	border-collapse: collapse;
+	clear: both;
+	margin-top: 0.5em;
+	width: 100%;
+}
+.tdform1, .tdform3 {
+	width: 45%;
+}
+.tdform2:before {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 100%;
+	left: 49%;
+	position: absolute;
+	top: 0;
+	width: 2px;
+}
+.tdform2 {
+	position: relative;
+	text-align: center;
+	width: 10%;
+	vertical-align: middle!important;
+}
+.ebr-ad-main .form-table td label {
+	clear: both;
+	display: block;
+	font-size: 13px;
+	margin-bottom: 2px;
+}
+.ebr-ad-main .form-table td input[type="text"], .ebr-ad-main .form-table td input[type="password"], .ebr-ad-main .form-table td input[type="email"] {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: none;
+	box-sizing: border-box;
+	display: block;
+	padding: 5px;
+	width: 100%;
+}
+.tdform2 > span {
+	background: #f2f2f2 none repeat scroll 0 0;
+	padding: 10px;
+	position: relative;
+}
+.ebr-ad-main .form-table td {
+	line-height: 1.3;
+	margin-bottom: 9px;
+	padding: 0;
+	vertical-align: top;
+}
+.api-table {
+	border-top: 1px solid #ddd;
+	margin-top: 15px;
+	padding-top: 15px;
+}
+.api-table input[input="text"] { 
+	width: 100%
+}
+.ebr-ad-main .tdform1 td, .ebr-ad-main .tdform3 td, .ebr-ad-main .api-table td { 
+	width: 50%;
+	padding: 5px 10px 5px 0;
+}
+.tdform1 label small {
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
+}
+.ebr-ad-main .btnform {
+	background:#4ba51d;
+	border-color: #4ba51d;
+    box-shadow: 0 1px 0 #4ba51d;
+    color: #fff;
+}
+.ebr-ad-main .btnform:hover, .ebr-ad-main .btnform:active {
+    background: #4ba51d; none repeat scroll 0 0;
+    border-color: #4ba51d;;
+    box-shadow: 0 1px 0 #4ba51d;;
+    color: #fff;
+}
+.ebr-ad-main a {
+    color: #4ba51d;
+    text-decoration:none;
+}
+.ebr-ad-main a:hover, .ebr-ad-main a:active {
+    color:  #4ba51d;
+}
+.api-table input[readonly] {
+    background-color: #fff;
+    padding: 5px;
+}
+
+.main-content {
+    padding: 0 15px;
+}
+.main-content h1 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.main-content ul.txt-list {
+    clear: both;
+    display: block;
+    padding-left: 15px;
+}
+.main-content .txt-list > li {
+    display: list-item;
+    list-style: inside none disc;
+    line-height: 24px;
+}
+.main-content .iframevideo-box, .main-content .textimage-box {
+    clear: both;
+    display: block;
+    padding: 20px 0;
+}
+.main-content img{max-width:100%}
+
+/* validation css Start*/
+
+.error-container { display:none; }
+.error-container { text-align: center; }
+
+form#ebuyers_sign_up_form input.error, form#ebuyers_sign_in_form input.error, form#forgot_password_form input.error {
+    box-shadow: 0 0 2px 0 #de1313;
+}
+
+.container-data-error {
+    background: #f2dede none repeat scroll 0 0;
+    border: 1px solid #eed3d7;
+    color: #b94a48;
+    font-size: 14px;
+    padding: 6px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.container-data-success {
+	background: #dff0d8 none repeat scroll 0 0;
+	border: 1px solid #d6e9c6;
+	color: #468847;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.error-container.wrap > p {
+    display: inline !important;
+    margin: 0;
+    padding-right: 6px;
+}
+
+.error-container p:first-child {
+    position: relative;
+}
+.container-data-error p:first-child::before {
+    background: rgba(0, 0, 0, 0) url("../images/error-icon.png") no-repeat scroll 0 0;
+    content: "";
+    height: 25px;
+    left: -28px;
+    position: absolute;
+    top: -2px;
+    width: 23px;
+}
+
+.container-data-success p:first-child::before {
+    background: rgba(0, 0, 0, 0) url("../images/success-icon.png") no-repeat scroll 0 0;
+    content: "";
+    height: 25px;
+    left: -28px;
+    position: absolute;
+    top: -3px;
+    width: 23px;
+}
+/* validation css End*/
+
+/* Pop Up Css Start*/
+
+.btn-small {
+  padding: .75em 1em;
+  font-size: 0.8em;
+}
+
+.modal-box {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 98%;
+  background: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+@media (min-width: 32em) {
+
+.modal-box { width: 50%; }
+
+}
+
+.modal-box header,
+.modal-box .modal-header {
+  padding: 1.25em 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-box header h3,
+.modal-box header h4,
+.modal-box .modal-header h3,
+.modal-box .modal-header h4 { margin: 0; }
+
+.modal-box .modal-body { padding: 0em 1.5em; min-height: 400px; height:400px; overflow-y: scroll;}
+
+.modal-box footer,
+.modal-box .modal-footer {
+  padding: 1em;
+  border-top: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.02);
+  text-align: right;
+}
+
+.modal-overlay {
+  opacity: 0.9 !important;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#popup1 .modal-body p{ font-size:14px; font-family: "Open Sans",sans-serif; }
+
+a.close {
+  line-height: 1;
+  font-size: 1.5em;
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  text-decoration: none;
+  color: #bbb;
+}
+
+a.js-modal-close {
+    cursor: pointer;
+}
+
+a.close:hover {
+  color: #222;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+#eBuyersReviewed-main a { box-shadow: none; text-decoration: none; }
+#eBuyersReviewed-main .api-table a { font-size:15px !important; }
+
+/* Pop Up Css End*/
+
+@media only screen and ( max-width:767px){
+.main-content .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.main-content .embed-container iframe, .main-content .embed-container object, .main-content .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+}
+
